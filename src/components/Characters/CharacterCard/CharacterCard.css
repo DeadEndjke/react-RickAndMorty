@@ -1,0 +1,54 @@
+img {
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid hsl(185, 75%, 54%);
+}
+
+.setka {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.setka a {
+  margin: 10px auto 20px auto;
+  text-decoration: none;
+  color: black;
+}
+
+.red {
+  margin-left: 5px;
+  padding: 3px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+.green {
+  margin-left: 5px;
+  padding: 3px;
+  background-color: green;
+
+  color: white;
+  border-radius: 5px;
+}
+.gray {
+  margin-left: 5px;
+  padding: 3px;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+}
+.textandselect {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+}
+
+@media screen and (max-width: 973px) {
+  .setka {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 667px) {
+  .setka {
+    grid-template-columns: 1fr;
+  }
+}

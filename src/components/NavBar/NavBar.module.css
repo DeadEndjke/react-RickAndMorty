@@ -1,0 +1,26 @@
+.NavBar {
+  margin: 10px auto 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "n n n";
+}
+
+.burger {
+  display: none;
+  padding: 0px 15px;
+  text-align: start;
+}
+
+.NavBarItem {
+  grid-area: "n";
+}
+
+@media screen and (max-width: 498px) {
+  .NavBar {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}
