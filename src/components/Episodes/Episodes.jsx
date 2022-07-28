@@ -15,7 +15,6 @@ const Episodes = () => {
     axios
       .get(baseUrl + `?episode=S0${season}&name=${query}`)
       .then(({ data }) => {
-        console.log(data);
         setEpisode(data.results);
         setSeasonQty(5);
       });

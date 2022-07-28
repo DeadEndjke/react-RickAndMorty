@@ -11,7 +11,6 @@ const Locations = () => {
 
   useEffect(() => {
     axios.get(baseUrl + `?page=${page}&name=${query}`).then(({ data }) => {
-      console.log(data);
       setLocation(data.results);
       setPageQty(data.info.pages);
     });

@@ -7,7 +7,6 @@ import Locations from "./components/Locations/Locations";
 import CharacterPage from "./components/Characters/CharacterCard/CharacterPage";
 import EpisodesPage from "./components/Episodes/EpisodesItem/EpisodesPage";
 import LocationsPage from "./components/Locations/LocationsPage";
-import Test from "./Test";
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
             <Route path={"/characters/:id"} element={<CharacterPage />} />
             <Route path={"/episodes/:id"} element={<EpisodesPage />} />
             <Route path={"/locations/:id"} element={<LocationsPage />} />
-            <Route path={"/test"} element={<Test />} />
           </Routes>
         </div>
       </div>

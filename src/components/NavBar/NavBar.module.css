@@ -14,13 +14,11 @@
 .NavBarItem {
   grid-area: "n";
 }
-
+/* 
 @media screen and (max-width: 498px) {
   .NavBar {
     display: none;
   }
 
-  .burger {
-    display: block;
-  }
-}
+
+} */

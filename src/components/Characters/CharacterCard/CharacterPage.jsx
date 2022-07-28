@@ -5,8 +5,7 @@ const CharacterPage = () => {
   let { id } = useParams();
 
   let [fetchedData, updateFetchedData] = useState([]);
-  let { name, location, origin, gender, image, status, species, episode } =
-    fetchedData;
+  let { name, location, origin, gender, image, status, species } = fetchedData;
 
   let api = `https://rickandmortyapi.com/api/character/${id}`;
 
@@ -19,9 +18,11 @@ const CharacterPage = () => {
 
   return (
     <div>
-      <h1>{name}</h1>
-
-      <img src={image} alt="" />
+      <div>
+        {" "}
+        <h1>{name}</h1>
+        <img src={image} alt="" />
+      </div>
 
       <div>
         <div>
